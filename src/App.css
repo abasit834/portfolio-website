@@ -1,0 +1,16 @@
+.logo{
+    margin: 30px;
+}
+
+body{
+    color:white;
+    font-family: "Poppins";
+}
+
+.intro{
+    margin: 40px;
+}
+.intro p{
+    position: relative;
+    bottom:15px;
+}
