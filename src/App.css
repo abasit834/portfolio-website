@@ -1,16 +1,232 @@
-.logo{
-    margin: 30px;
+header{    
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav{
+    width: fit-content;
+    margin-top:3px;
+}
+header nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding:5px;
+    margin:5px;
+    cursor: pointer;
 }
 
-body{
-    color:white;
-    font-family: "Poppins";
+a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.6s ease-in-out;
+}
+
+a:hover{
+    color: #14a4fd;
+}
+
+.active{
+    color: #14a4fd;
+}
+
+.logo{
+    margin-left:20px;
+    margin-right:auto;
+}
+
+.text span{
+    color: #14a4fd;
 }
 
 .intro{
     margin: 40px;
 }
+.text{
+    display: inline-block;
+}
+.image{
+    display: inline-block;
+    width: fit-content;
+}
+
 .intro p{
+    font-size: 0.9em;
     position: relative;
     bottom:15px;
 }
+
+.tech img{
+    animation : spinIcon 1.3s ease;
+    transition: height 0.5s ease-in-out;
+    height:40px;
+    margin:35px;
+}
+
+.tech img:hover{
+    height:50px;
+}
+.techstack{
+    position: relative;
+    top:100px;
+}
+
+.techstack h2{
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+.techstack p{
+    font-size: 0.8em;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+
+@media screen and (min-width : 368px) and (max-width: 706px) {
+    .logo{
+        width:40px;
+        height:40px;
+    }
+    .text h1{
+        font-size: 1em;
+    }
+    .text p{
+        font-size: 0.5em;
+        bottom : 7px;
+    }
+    .image img{
+        margin-bottom: 5px;
+        width:66px;
+        height:66px;
+    }
+    .tech img {
+        height: 28px;
+        margin: 14px;
+    }
+    br{
+        display: none;
+    }
+    .techstack h2{
+        font-size: 0.8em;
+    }
+    .techstack p{
+        font-size: 0.5em;
+    }
+   
+}
+
+@media screen and (min-width : 265px) and (max-width : 368px)
+{
+    .logo{
+        width:40px;
+        height:40px;
+    }
+    .text h1{
+        font-size: 0.9em;
+    }
+    .text p{
+        font-size: 0.4em;
+        bottom : 7px;
+    }
+    .image img {
+        margin-bottom: 5px;
+        width: 67px;
+        height: 67px;
+    }
+    .tech img {
+        height: 24px;
+        margin: 14px;
+    }
+    br{
+        display: none;
+    }
+    .techstack h2{
+        font-size: 0.8em;
+    }
+    .techstack p{
+        font-size: 0.5em;
+    }
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-60px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to{
+            transform: translateY(0);
+            opacity: 1;
+    }
+}
+
+@keyframes leftIn {
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+
+    }
+    to{
+        transform : translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightIn {
+    from{
+        transform: translateX(200px);
+
+    }
+    to{
+        transform : translateX(0);
+    }
+}
+
+@keyframes spinIcon {
+    from{
+            transform: translateY(-100px) rotate(360deg);
+    }
+    to{
+            transform: translateY(0) rotate(0deg);
+    }
+    
+}
+
+
+@keyframes rotate {
+    from{
+            transform: rotate(360deg);
+    }
+    to{
+            transform: rotate(0deg);
+    }
+    
+}
+
+.animateSlideDown{
+    animation: slideDown 1s ease;
+}
+
+.animateFadeIn{
+    animation: fadeIn 1.5s ease;
+}
+.animateLeftIn{
+    animation: leftIn 1.5s ease;
+}
+.animateRightIn{
+    animation : rightIn 1s ease;
+}
+
