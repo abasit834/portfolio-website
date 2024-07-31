@@ -17,7 +17,7 @@ const TechStack = ()=>{
     return (<div className="techstack" id="tech-section">
         
         <h2>My Tech Stack</h2>
-        <p>With a solid foundation in various modern technologies, I have successfully created numerous projects. <br/> My technical skills span a diverse array of tools and platforms, enabling me <br />to deliver robust and scalable solutions.</p>
+        <p>With a solid foundation in various modern technologies, I have successfully created numerous projects. <br id="one"/> My technical skills span a diverse array of tools and platforms, enabling me <br />to deliver robust and scalable solutions.</p>
         
     <div className="tech">
         <img src={html} alt="" />

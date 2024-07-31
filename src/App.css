@@ -1,3 +1,6 @@
+#icon{
+    display: none;
+}
 header{    
     padding: 10px;
     display: flex;
@@ -18,7 +21,7 @@ header nav ul li{
 a{
     text-decoration: none;
     color: white;
-    transition: color 0.6s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 a:hover{
@@ -80,8 +83,41 @@ a:hover{
     animation: fadeIn 1.5s ease;
 }
 
+.sidebar{
+    background-color:#1e98fe;
+    position: fixed;
+    top:0;
+    height:100vh;
+    width:200px;
+    z-index: 1;
+    transition: right 0.6s ease;
+}
+.sidebar img{
+    margin:10px;
+}
+.show{
+    right :0;
+}
+.hide{
+    right:-200px;
+}
+#small li{
+    display: block;
+}
+
+
+
+
 
 @media screen and (min-width : 368px) and (max-width: 706px) {
+    #icon{
+        display: block;
+        margin:3px; 
+        cursor : pointer;      
+    }
+    #large{
+        display: none;
+    }
     .logo{
         width:40px;
         height:40px;
@@ -95,15 +131,12 @@ a:hover{
     }
     .image img{
         margin-bottom: 5px;
-        width:66px;
-        height:66px;
+        width:65px;
+        height:65px;
     }
     .tech img {
-        height: 28px;
-        margin: 14px;
-    }
-    br{
-        display: none;
+        height: 25px;
+        margin: 16px;
     }
     .techstack h2{
         font-size: 0.8em;
@@ -111,11 +144,25 @@ a:hover{
     .techstack p{
         font-size: 0.5em;
     }
-   
+    br{
+        display: none;
+    }
+    .animateFadeIn br{
+        display: block;
+    }
+
 }
 
 @media screen and (min-width : 265px) and (max-width : 368px)
 {
+    #icon{
+        display: block;
+        margin:3px;  
+        cursor: pointer;     
+    }
+    header nav{
+        display:none;
+    }
     .logo{
         width:40px;
         height:40px;
@@ -136,15 +183,20 @@ a:hover{
         height: 24px;
         margin: 14px;
     }
-    br{
-        display: none;
-    }
     .techstack h2{
         font-size: 0.8em;
     }
     .techstack p{
         font-size: 0.5em;
     }
+
+    br{
+        display: none;
+    }
+    .animateFadeIn br{
+        display: block;
+    }
+
 }
 
 
