@@ -28,7 +28,7 @@ const TechStack = ()=>{
         <h1>My Tech Stack</h1>
         <p>With a solid foundation in various modern technologies, I have successfully created numerous projects. <br id="one"/> My technical skills span a diverse array of tools and platforms, enabling me to deliver robust and <br />scalable solutions.</p>
         </div> 
-    <div className="tech">
+    <div className="tech one">
         <img src={html} alt="" />
         <img src={css} alt="" />
         <img src={js} alt="" />
@@ -37,7 +37,7 @@ const TechStack = ()=>{
         <img src={node} alt="" />
     </div>
 
-    <div className="tech">
+    <div className="tech one">
         <img src={express} alt="" />
         <img src={mongo} alt="" />
         <img src={mysql} alt="" />  
@@ -49,7 +49,7 @@ const TechStack = ()=>{
     <div className="start">
         <h1>Tools</h1>
     </div>
-    <div className="tech">
+    <div className="tech two">
         <img src={vscode} alt="" />
         <img src={postman} alt="" />
         <img src={npm} alt="" />

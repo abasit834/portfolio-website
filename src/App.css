@@ -437,7 +437,17 @@ label{
         height: 110px;
         margin-top: 80px;
     }
-    .tech img {
+    .one{
+        margin-left:15px;
+    }
+    .two{
+        margin-left:18px;
+    }
+    .two img{
+        height:25px;
+        margin:14px;
+    }
+    .one img {
         height: 25px;
         margin: 16px;
     }
@@ -551,7 +561,17 @@ label{
         height: 110px;
         margin-top: 80px;
     }
-    .tech img {
+    .one{
+        margin-left:15px;
+    }
+    .two{
+        margin-left:18px;
+    }
+    .two img{
+        height:24px;
+        margin:14px;
+    }
+    .one img {
         height: 24px;
         margin: 14px;
     }
