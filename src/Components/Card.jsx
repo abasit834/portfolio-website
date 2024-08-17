@@ -11,7 +11,7 @@ const Card = (props) => {
         <div className="details">
             <h3>{props.title}</h3>
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, libero nam iure, iste nemo veritatis animi hic consequuntur ab dolorum possimus quas maiores cumque necessitatibus. Pariatur quos inventore quidem similique.{props.descripion}</p>
+                <p>{props.description}</p>
             </article>
             <h4>Tech Stack : </h4> <span>{props.stack}</span>
         </div>
@@ -19,7 +19,7 @@ const Card = (props) => {
 
         <div id="preview">
                 <img src={link} alt="" height="30px" width="30px"/>
-                <span><Link to={props.preview}>Live Preview</Link></span>
+                <span><Link to={props.demo}>Demo</Link></span>
             </div>
 
             <div id="github">

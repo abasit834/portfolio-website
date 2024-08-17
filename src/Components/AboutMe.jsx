@@ -34,11 +34,11 @@ const AboutMe = () =>{
       <div className="experience">
       <h1>Experience</h1>
       <div className="exp-info">
-        <h4 className="animateFadeIn">Full Stack Developer Intern</h4>
+        <h4 className="animateFadeIn">Automation Testing Intern</h4>
         <p className="animateFadeIn">Emblem Technologies</p>
         <span className="animateFadeIn" id="lhr">Lahore</span>
         <span className="animateFadeIn" id="full">Full time</span>
-        <span className="animateFadeIn" id="date">July 2024-Present</span>
+        <span className="animateFadeIn" id="date">July-August 2024</span>
       </div>
 
       </div>

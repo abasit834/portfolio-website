@@ -36,6 +36,12 @@ a:hover{
 .logo{
     margin-left:20px;
     margin-right:auto;
+    cursor: pointer;
+    transition : height 0.5s ease;
+}
+
+.logo:hover{
+    height:65px;
 }
 
 .text span{
@@ -274,13 +280,19 @@ label{
     height: 450px;
     border-radius: 10%;
     border:2px solid gray;
-    /* box-shadow: 0px 2px 8px 2px gray; */
+    animation: slideDownWithOpacity 1.5s ease;
+    /* box-shadow: 0px 2px 4px 2px gray; */
 }
- .img{
+
+.img{
     height:180px;
-}   
+}  
+
 .img img{
-    width: 100%;
+    width: 90%;
+    height:90%;
+    margin:15px;
+    border-radius: 5%;
 }
 
 .details{
@@ -307,7 +319,7 @@ label{
     display: inline-block;
     width:120px;
     height: 100%;
-    margin: 7px;
+    margin: 10px;
 }
 .links div img{
     display: inline;
@@ -319,6 +331,10 @@ label{
     left:5px;
 }
 
+#github{
+    position: relative;
+    left:15px;
+}
 .project-cards{
     width: 100%;
     display: flex;
@@ -326,14 +342,41 @@ label{
     gap:10px;
 }
 
+.first-test{
+    display: flex;
+    align-items: center;
+    border:2px solid grey;
+    width:400px;
+    height: 200px;
+    border-radius:10%;
+}
+.first-test img{
+    display: inline;
+    margin:30px;
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+}
+.first-test p{
+    text-align: left;
+    font-size: 0.6em;
+}
+.first-test span{
+    position: relative;
+    top:10px;
+    display: block;
+}
+.testimonial{
+    animation: leftIn 1s ease;
+}
 
-  
-  @keyframes fadeInFromLeft {
+@keyframes fadeInFromLeft {
     to {
       opacity: 1;
       transform: translateX(0);
     }
-  }
+}
+
 .skill:nth-child(1) { animation-delay: 0.1s; }
 .skill:nth-child(2) { animation-delay: 0.2s; }
 .skill:nth-child(3) { animation-delay: 0.3s; }
@@ -349,6 +392,7 @@ label{
 .skill:nth-child(13) { animation-delay: 1.3s; }
 .skill:nth-child(14) { animation-delay: 1.4s; }
 .skill:nth-child(15) { animation-delay: 1.5s; }
+
 
 @media screen and (min-width : 368px) and (max-width: 706px) {
     h1{
@@ -442,6 +486,9 @@ label{
         left:147px;
         bottom:16px;
     }
+    .details article{
+        font-size: 0.8em;
+    }
     
     .projects{
         width:100%;
@@ -449,7 +496,30 @@ label{
     .project-cards{
         justify-content: center;
     }
-
+    .testimonial{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial h1{
+        margin-right: auto;
+    }
+    .first-test{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:200px;
+        height: max-content;
+    }
+    .first-test p{
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        bottom:25px;
+    }
 }
 
 @media screen and (min-width : 265px) and (max-width : 368px)
@@ -540,11 +610,34 @@ label{
     .project-cards{
         justify-content: center;
     }
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial h1{
+    margin-right: auto;
+    }
+    .first-test{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:200px;
+        height: max-content;
+    }
+    .first-test p{
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px;
+        position: relative;
+        bottom:25px;
+    }
+    .details article{
+        font-size: 0.8em;
+    }
+    
 }
-
-
-
-
 
 /* Animations */
 
@@ -565,6 +658,17 @@ label{
     }
     to{
         transform: translateX(0);
+    }
+}
+
+@keyframes slideDownWithOpacity {
+    from{
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -590,7 +694,7 @@ label{
 
 @keyframes leftIn {
     from{
-        transform: translateY(100px);
+        transform: translateX(-100px);
         opacity: 0;
 
     }

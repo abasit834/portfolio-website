@@ -5,14 +5,16 @@ import { useState} from "react";
 import sidebaricon from "../Assets/menu.png"
 import close from "../Assets/close.png";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Header = () =>{
+    const navigate =  useNavigate();
     const [show,setShow] =  useState(false);
 
     return <>
         <header>
-        <img className="logo animateSlideDown" src={layers} alt="" width={"60px"} height={"60px"}/>
+        <img onClick={()=>{navigate("/")}} className="logo animateSlideDown" src={layers} alt="" width={"60px"} height={"60px"}/>
         <div className={show ? "sidebar show" : "sidebar hide"}>
             <img src={close} alt="" width="15px" height="15px" onClick={()=>{setShow(false)}}/>
             <nav id="small">
