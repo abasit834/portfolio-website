@@ -13,26 +13,32 @@ const AboutMe = () =>{
     <div className="skills">
       <h1>Skills</h1>
       <div className="skill-box">
-      <span className="skill"><Skills name="HTML5"/></span>
-      <span className="skill"><Skills name="CSS3"/></span>
-      <span className="skill"><Skills name="Javascript"/></span>
-      <span className="skill"><Skills name="Jquery"/></span>
+      <span className="skill"><Skills name="React Native"/></span>
       <span className="skill"><Skills name="React"/></span>
       <span className="skill"><Skills name="Redux"/></span>
       <span className="skill"><Skills name="Nodejs"/></span>
       <span className="skill"><Skills name="Expressjs"/></span>
+      <span className="skill"><Skills name="Playwright Automation"/></span>
       <br />
       <span className="skill"><Skills name="MongoDB"/></span>
-      <span className="skill"><Skills name="Flutter"/></span>
       <span className="skill"><Skills name="Firebase"/></span>
       <span className="skill"><Skills name="MySQL"/></span>
       <span className="skill"><Skills name="Digital Image Processing"/></span>
-      <span className="skill"><Skills name="Playwright Automation"/></span>
+      <span className="skill"><Skills name="Data Science"/></span>
       </div>
     </div>
       
       <div className="experience">
       <h1>Experience</h1>
+
+      <div className="exp-info">
+        <h4 className="animateFadeIn">React Native Developer</h4>
+        <p className="animateFadeIn">Sooqz Dubai</p>
+        <span className="animateFadeIn" id="lhr">Lahore (Remote) </span>
+        <span className="animateFadeIn" id="full">Part Time</span>
+        <span className="animateFadeIn" id="date">April-December 2025</span>
+      </div>
+      <br />
       <div className="exp-info">
         <h4 className="animateFadeIn">Automation Testing Intern</h4>
         <p className="animateFadeIn">Emblem Technologies</p>

@@ -19,13 +19,13 @@ const Card = (props) => {
 
         <div id="preview">
                 <img src={link} alt="" height="30px" width="30px"/>
-                <span><Link to={props.demo}>Demo</Link></span>
+                <span><Link to={props.demo}>Live Link</Link></span>
             </div>
 
-            <div id="github">
+          {props.code && <div id="github">
                 <img src={github} alt="" height="30px" width="30px"/>
                 <span><Link to={props.github}>View Code</Link></span>
-            </div>
+            </div>}  
         </div>
     </div>
 }
